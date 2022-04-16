@@ -1,3 +1,5 @@
+#---SINGLE PHOTON COUNTING-----------------------
+
 #Set the number of strips to cut
 norm_cut_num = 128
 
@@ -26,7 +28,6 @@ err_max = 1600
 # Set the miximum number of iterations
 max_iter = 400
 
-
 # Set the maximum # of photons allowed in each event:
 max_photon = 20
 
@@ -37,14 +38,18 @@ gauss_max = 30
 # Specify the number of bins that is going to be used in the following function to bin the events
 _bins = 400
 
-# Set the parameters mentioned above
+#---BRAGG'S SPECTROSCOPY-------------------
+
+# Set the parameters for finding the spectral lines
 fit_cut_num = 32
 half_width = 10
 peak_width = 100
 
+# The order of diffraction as well as the double of the lattice spacing, in angstrom
 fit_n = 1
 fit_2d = 15.96
 
+# Set the initial values of the fitting parameters: see the report or the Jupyter notebook.
 l_init = 6000
 alpha_init = 1
 phi_init = 0
